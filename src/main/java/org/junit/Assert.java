@@ -1025,4 +1025,16 @@ public class Assert {
             return(true);
         return(false);
     }
+    
+    public static boolean assertGreaterThen(long o1, long o2) {
+        if(o1>o2)
+               return(true);
+        return(false);
+    }
+    
+    public static boolean assertGreaterThen(double o1, double o2) {
+        if(o1>o2)
+               return(true);
+        return(false);
+    }
 }

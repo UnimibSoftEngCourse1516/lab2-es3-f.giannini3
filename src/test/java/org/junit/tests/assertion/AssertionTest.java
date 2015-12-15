@@ -9,6 +9,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNotSame;
 import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertGreaterThen;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
@@ -287,7 +288,18 @@ public class AssertionTest {
     }
     
     @Test
+<<<<<<< HEAD
     public <T extends Throwable> void greaterThen() {
+=======
+    public void greatherThen() {
+        int a=2;
+        int b=1;
+        assertGreaterThen(a, b);
+        assertGreaterThen(2,1);
+        assertGreaterThen((byte) 2, (byte) 1);
+        assertGreaterThen((short) 2, (short) 1);
+        assertGreaterThen(2.0, 1.0);
+>>>>>>> refs/heads/greater-primitives
     }
 
     @Test(expected = AssertionError.class)
